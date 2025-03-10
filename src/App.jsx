@@ -5,11 +5,11 @@ import UpdateItem from "./components/UpdateItem";
 const API_URI = `http://${import.meta.env.VITE_API_URI}/doors`;
 
 function App() {
-  // Get the existing item from the server
-  // const [item, setItem] = useState(null);
-  // pass the item to UpdateItem as a prop
+  
+  const [item, setItem] = useState(null);
+ 
 
-  return <UpdateItem />;
+  return <UpdateItem item={item} url = {API_URI}/>;
+
 }
-
 export default App;
